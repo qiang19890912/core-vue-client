@@ -6,4 +6,8 @@
 
 <style>
 
+.color-main {
+  color: #409EFF;
+}
+
 </style>

@@ -5,6 +5,10 @@ import store from './store'
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+//加载图标
+import '@/icons'
+//全局样式
+//import '@/styles/index.scss' // global css
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
