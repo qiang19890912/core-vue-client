@@ -90,7 +90,7 @@ export default {
         //     }).catch(() => {
         //       this.loading = false
         //     })
-        login(this.username,this.password).then(res=>{
+        login(this.loginForm.username,this.loginForm.password).then(res=>{
             this.loading = false;
             console.log(res.data)
         }).catch(()=>{

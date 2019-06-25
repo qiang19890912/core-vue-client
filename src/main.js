@@ -13,7 +13,7 @@ import '@/icons'
 process.MOCK && require('./mock')
 //远程调用api使用的类库
 import axios from 'axios'
-
+console.log(process.MOCK);
 Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
