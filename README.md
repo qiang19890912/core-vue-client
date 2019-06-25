@@ -1,5 +1,5 @@
 # 使用Vue和ElementUI打造的一套通用授权系统
-
+# 借鉴了mall-admin-web项目
 
 # core-vue-basic-client
 
