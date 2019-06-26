@@ -8,6 +8,7 @@
         :rules="loginRules"
         label-position="left"
       >
+        <h2 class="login-form-title">通用权限管理系统</h2>
         <el-form-item label="用户名:" prop="username">
           <el-input v-model="loginForm.username" type="text" placeholder="请输入用户名">
             <span slot="prefix">
@@ -115,5 +116,8 @@ export default {
   width: 360px;
   margin: 140px auto;
   border-top: 10px solid #409eff;
+}
+.login-form-title{
+    text-align: center
 }
 </style>
