@@ -91,9 +91,12 @@ export default {
         //     }).catch(() => {
         //       this.loading = false
         //     })
-        login(this.loginForm.username,this.loginForm.password).then(res=>{
+        
+        //已经在request中把数据拆了出来
+        login(this.loginForm.username,this.loginForm.password).then(data=>{
             this.loading = false;
-            console.log(res.data)
+            console.log(data);
+            this.$router.push('/main');
         }).catch(()=>{
             this.loading = false
         })

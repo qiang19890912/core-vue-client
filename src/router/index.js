@@ -12,6 +12,11 @@ export const routes = [
     path:'/login',
     name:'login',
     component:()=>import('@/views/login/index')
+  },
+  {
+    path:'/main',
+    name:'main',
+    component:()=>import('@/views/layout/layout')
   }
 ]
 
