@@ -1,12 +1,10 @@
 <template>
-<div class="menu-wrapper">
-    
+<div>
     <template v-for="item in routes">
         <el-menu-item :key="item">
-            <span>item</span>
+            <span>{{item}}</span>
         </el-menu-item>
     </template>
-
 </div>
 
 </template>

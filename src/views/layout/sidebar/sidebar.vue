@@ -1,4 +1,5 @@
 <template>
+  <div class="menu-wrapper">
     <el-menu mode="vertical"
       :show-timeout="200"
       :default-active="$route.path"
@@ -11,11 +12,13 @@
 
         </sidebar-item>
     </el-menu>
+  </div>
+   
 </template>
 
 <script>
 import sidebarItem from './sidebaritem'
-export default  {
+export default {
   name:'sidebar',
   components:{
       sidebarItem
@@ -27,8 +30,16 @@ export default  {
    }
   }
 }
+
+// export {abc};
 </script>
 
 <style scoped>
-
+  .menu-wrapper{
+    position: fixed;
+    width: 200px;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+  }
 </style>

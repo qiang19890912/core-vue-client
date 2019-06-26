@@ -27,4 +27,7 @@ export default {
 .color-main {
   color: #409eff;
 }
+*{
+  margin: 0px;
+}
 </style>
