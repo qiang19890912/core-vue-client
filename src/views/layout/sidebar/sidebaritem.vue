@@ -1,28 +1,28 @@
 <template>
-<div>
+  <div>
     <template v-for="item in routes">
-        <el-menu-item :key="item">
-            <span>{{item}}</span>
+      <router-link to='/' :key="item">
+        <el-menu-item>
+          <i class="el-icon-setting"></i>
+          <span slot="title">{{item}}</span>
         </el-menu-item>
+      </router-link>
     </template>
-</div>
-
+  </div>
 </template>
 
 <script>
 export default {
-  name:'sidebaritem',
-  props:{
-      routes :{
+  name: "sidebaritem",
+  props: {
+    routes: {
       type: Array
-    },
+    }
   },
-  data(){
-   return {
-
-   }
+  data() {
+    return {};
   }
-}
+};
 </script>
 
 <style scoped>

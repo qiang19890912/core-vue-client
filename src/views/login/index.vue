@@ -121,6 +121,7 @@ export default {
   border-top: 10px solid #409eff;
 }
 .login-form-title{
-    text-align: center
+    text-align: center;
+    margin-bottom: 30px; 
 }
 </style>

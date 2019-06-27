@@ -28,6 +28,8 @@ export default {
   color: #409eff;
 }
 *{
-  margin: 0px;
+  margin:0px;
+  font-size: 14px;
+  text-decoration: none;
 }
 </style>

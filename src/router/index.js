@@ -16,7 +16,15 @@ export const routes = [
   {
     path:'/main',
     name:'main',
-    component:()=>import('@/views/layout/layout')
+    component:()=>import('@/views/layout/layout'),
+    children:[
+      {
+        path:"",
+        name:'demo',
+        component:()=>import('@/components/Demo')
+      }
+    ]
+    
   }
 ]
 
