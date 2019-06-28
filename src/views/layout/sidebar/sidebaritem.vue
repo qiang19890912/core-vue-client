@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="{hidespan:isCollapse}">
     <template v-for="item in routes">
       <template  v-if="!item.hidden&&item.children" >
           <router-link
@@ -15,8 +15,10 @@
       <el-submenu v-else :key="item.meta.name">
         <template slot="title">
           <i :class="item.meta.icon"></i>
-          <span slot="title">{{item.meta.name}}</span>
+          <span>{{item.meta.name}}</span>
         </template>
+        
+         <!-- <template slot="title">我的工作台</template> -->
         <template v-for="child in item.children">
           <sidebaritem
             :routes="child"
@@ -48,6 +50,11 @@ export default {
   data() {
     return {};
   },
+  computed:{
+    isCollapse(){
+      return this.$store.state.app.isCollapse
+    }
+  },
   methods: {
     
     hasOneChild(item) {
@@ -57,10 +64,16 @@ export default {
       });
 
       return showChildren.length === 1;
-    }
+    },
   }
 };
 </script>
 
-<style scoped>
+<style >
+  .hidespan span {
+    visibility: hidden;
+  }
+   .hidespan i.el-submenu__icon-arrow {
+    visibility: hidden;
+  }
 </style>

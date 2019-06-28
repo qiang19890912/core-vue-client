@@ -96,7 +96,7 @@ export default {
         login(this.loginForm.username,this.loginForm.password).then(data=>{
             this.loading = false;
             console.log(data);
-            this.$router.push('/index');
+            this.$router.push('/home');
         }).catch(()=>{
             this.loading = false
         })
