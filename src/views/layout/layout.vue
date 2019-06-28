@@ -4,6 +4,7 @@
           <sidebar class="sidebar-container"></sidebar>
       </div>
       <div class="main-container">
+          <navbar></navbar>
           <router-view/>
       </div>
   </div>
@@ -11,10 +12,12 @@
 
 <script>
 import sidebar from './sidebar/sidebar'
+import navbar from './navbar'
 export default {
   name: "layout",
   components:{
-    sidebar
+    sidebar,
+    navbar
   },
   data() {
     return {
@@ -45,7 +48,7 @@ export default {
    position: absolute;
    top: 0px;
    bottom: 0px;
-   width: 200px;
+   width: 220px;
    overflow: hidden;
    transition: all .28s ease-out;
  }
@@ -53,24 +56,21 @@ export default {
    position: absolute;
    top: 0;
    bottom: 0;
-   width: 200px;
+   width: 220px;
    
    transition: all .28s ease-out;
  }
  .main-container{
    min-height: 100%;
-   margin-left: 200px;
+   margin-left: 220px;
+   overflow: hidden;
    transition: all .28s ease-out;
-   border: 1px solid black;
  }
  .hideSideBar{
-   transform: translate(-160px,0);
-   .sidebar-container{
-     transform: translate(151px,0);
-   }
+   width: 64px;
  }
  .hideSideBar + .main-container{
-   margin-left: 40px;
+   margin-left: 64px;
  }
 
 
